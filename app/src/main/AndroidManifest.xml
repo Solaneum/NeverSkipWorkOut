@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dasi.psc.wkt_test" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".workoutListActivity"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dasi.psc.wkt_test.MainActivity" />
+        </activity>
+        <activity
+            android:name=".addAWorkoutActivity"
+            android:label="@string/title_activity_add_aworkout"
+            android:parentActivityName=".workoutListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dasi.psc.wkt_test.workoutListActivity" />
+        </activity>
+        <activity
+            android:name=".editAWorkoutActivity"
+            android:label="@string/title_activity_edit_aworkout"
+            android:parentActivityName=".workoutListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dasi.psc.wkt_test.workoutListActivity" />
+        </activity>
+    </application>
+
+</manifest>
