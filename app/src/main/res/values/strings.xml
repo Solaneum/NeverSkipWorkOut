@@ -7,5 +7,7 @@
     <string name="title_activity_display_message">My Message</string>
     <string name="title_activity_add_aworkout">Add a new workout</string>
     <string name="title_activity_edit_aworkout">Edition - Workout</string>
+    <string name="title_activity_exercices_list">Exercices</string>
+    <string name="title_activity_statistics">Statistics</string>
 
 </resources>

@@ -40,6 +40,22 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.dasi.psc.wkt_test.workoutListActivity" />
         </activity>
+        <activity
+            android:name=".ExercicesListActivity"
+            android:label="@string/title_activity_exercices_list"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dasi.psc.wkt_test.MainActivity" />
+        </activity>
+        <activity
+            android:name=".StatisticsActivity"
+            android:label="@string/title_activity_statistics"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dasi.psc.wkt_test.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

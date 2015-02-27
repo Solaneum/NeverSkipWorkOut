@@ -45,4 +45,18 @@ public class MainActivity extends ActionBarActivity {
         startActivity(intent);
     }
 
+    /** Called when the user clicks the Send button */
+    public void openExercicesList(View view) {
+        Intent intent = new Intent(this, ExercicesListActivity.class);
+
+        startActivity(intent);
+    }
+
+    /** Called when the user clicks the Send button */
+    public void openStatistics(View view) {
+        Intent intent = new Intent(this, StatisticsActivity.class);
+
+        startActivity(intent);
+    }
+
 }

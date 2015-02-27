@@ -10,11 +10,9 @@
         android:layout_height="wrap_content"
         android:text="Workouts"
         android:id="@+id/button"
-        android:layout_marginTop="33dp"
         android:onClick="openWorkoutList"
-        android:layout_below="@+id/imageView"
+        android:layout_below="@+id/button3"
         android:layout_alignLeft="@+id/imageView"
-        android:layout_alignStart="@+id/imageView"
         android:layout_alignRight="@+id/imageView"
         android:layout_alignEnd="@+id/imageView" />
 
@@ -22,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView"
-        android:src="@drawable/mainLogo"
+        android:src="@drawable/mainlogo"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
@@ -31,23 +29,23 @@
         android:layout_height="wrap_content"
         android:text="Exercices"
         android:id="@+id/button3"
-        android:layout_marginTop="36dp"
-        android:layout_below="@+id/button"
-        android:layout_alignLeft="@+id/button"
-        android:layout_alignStart="@+id/button"
-        android:layout_alignRight="@+id/button"
-        android:layout_alignEnd="@+id/button" />
+        android:onClick="openExercicesList"
+        android:layout_below="@+id/imageView"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginTop="38dp"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Statistics"
         android:id="@+id/button4"
-        android:layout_below="@+id/button3"
-        android:layout_alignLeft="@+id/button3"
-        android:layout_alignStart="@+id/button3"
-        android:layout_marginTop="35dp"
-        android:layout_alignRight="@+id/button3"
-        android:layout_alignEnd="@+id/button3" />
+        android:onClick="openStatistics"
+        android:layout_below="@+id/button"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView" />
 
 </RelativeLayout>
