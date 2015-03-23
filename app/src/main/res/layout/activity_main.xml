@@ -3,49 +3,60 @@
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Workouts"
-        android:id="@+id/button"
-        android:onClick="openWorkoutList"
-        android:layout_below="@+id/button3"
-        android:layout_alignLeft="@+id/imageView"
-        android:layout_alignRight="@+id/imageView"
-        android:layout_alignEnd="@+id/imageView" />
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#1f000000">
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView"
+        android:src="@drawable/mainlogo"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/mainlogo" />
+        android:layout_centerHorizontal="true" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Exercices"
-        android:id="@+id/button3"
-        android:onClick="openExercicesList"
-        android:layout_below="@+id/imageView"
-        android:layout_alignLeft="@+id/imageView"
-        android:layout_alignStart="@+id/imageView"
-        android:layout_marginTop="38dp"
-        android:layout_alignRight="@+id/imageView"
-        android:layout_alignEnd="@+id/imageView" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Statistics"
-        android:id="@+id/button4"
-        android:onClick="openStatistics"
-        android:layout_below="@+id/button"
-        android:layout_alignLeft="@+id/imageView"
-        android:layout_alignRight="@+id/imageView"
-        android:layout_alignEnd="@+id/imageView" />
+        <Button
+            android:layout_width="400px"
+            android:layout_height="100px"
+            android:id="@+id/button"
+            android:onClick="openWorkoutList"
+            android:layout_marginBottom="40dp"
+            android:layout_above="@+id/button3"
+            android:layout_centerHorizontal="true"
+            android:text="WORKOUT"
+            android:background="#d4009eff"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:layout_width="400px"
+            android:layout_height="100px"
+            android:id="@+id/button3"
+            android:onClick="openExercicesList"
+            android:layout_marginBottom="45dp"
+            android:text="Exercises"
+            android:background="#d4009eff"
+            android:textColor="#ffffffff"
+            android:layout_above="@+id/button4"
+            android:layout_alignLeft="@+id/button"
+            android:layout_alignStart="@+id/button" />
+
+        <Button
+            android:layout_width="400px"
+            android:layout_height="100px"
+            android:id="@+id/button4"
+            android:onClick="openStatistics"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/button3"
+            android:layout_alignStart="@+id/button3"
+            android:text="STATS"
+            android:textColor="#ffffffff"
+            android:background="#d4009eff" />
+    </RelativeLayout>
 
 </RelativeLayout>

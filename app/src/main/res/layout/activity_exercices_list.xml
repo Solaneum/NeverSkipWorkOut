@@ -4,7 +4,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.dasi.psc.wkt_test.ExercicesListActivity">
+    tools:context="com.dasi.psc.wkt_test.ExercicesListActivity"
+    android:background="#1f000000">
 
     <TextView
         android:layout_width="wrap_content"
@@ -23,5 +24,6 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/lblTitle"
-        android:layout_alignParentBottom="true" />
+        android:layout_alignParentBottom="true"
+        android:textFilterEnabled="false"/>
 </RelativeLayout>

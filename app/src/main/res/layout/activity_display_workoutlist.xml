@@ -31,7 +31,10 @@
         android:text="New Workout"
         android:id="@+id/button2"
         android:onClick="openAddWorkoutScreen"
+        android:background="#d4009eff"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:textColor="#ffffff" />
 
 </RelativeLayout>
